@@ -1,0 +1,87 @@
+/* Estilização geral */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+/* Container pricipal */
+.container {
+    padding: 20px;
+}
+
+/* Título */
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #2d2d2d;
+}
+
+/* Layout das mesas */
+.mesas-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 10px;
+}
+
+.mesa {
+    background-color: #e8ecef;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+.mesa:hover {
+    transform: scale(1.05);
+}
+
+.mesa-status {
+    display: inline-block;
+    background-color: #d9f6e3;
+    color: #2f7d3d;
+    font-size: 12px;
+    padding: 5px 8px;
+    border-radius: 12px;
+    margin-bottom: 8px;
+}
+
+.mesa-nome {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Barra de navegação */
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #ffffff;
+    border-top: 1px solid #ccc;
+    padding: 10px 0;
+}
+
+.nav-item {
+    text-align: center;
+    color: #666;
+    font-size: 14px;
+    cursor: pointer;
+    transition: color 0.2s ease-in-out;
+}
+
+.nav-item:hover {
+    color: #007bff;
+}
+
+.nav-item i {
+    display: block;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
